@@ -21,6 +21,7 @@ class Search extends Controller
 
         // busca conteudo do link de cada resultado
         preg_match_all('/<div class="BNeawe UPmit AP7Wnd lRVwie">([^<]*)<\/div>/s', $content, $linksbruto);
+        //preg_match_all('/<a*\s+jsname="UWckNb"*\s+href="([^"]+)"/', $content, $linksbruto);
 
         //cria array para receber os links tratados
         $links=[];
