@@ -35,7 +35,8 @@ class Search extends Controller
         $tupla=[];
 
         // loop que povoa array tupla
-        for($i=0; $i < sizeof($titles[1]); $i++){
+        //for($i=0; $i < sizeof($titles[1]); $i++){
+        for($i=0; $i < sizeof($links); $i++){
             $tupla[mb_convert_encoding($titles[1][$i], 'UTF-8')] = $links[$i];
 
             //echo ("<a href='http://".$links[$i]."/'>".$links[$i]."</a>\n");
