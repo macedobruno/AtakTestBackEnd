@@ -15,7 +15,6 @@ class Search extends Controller
         $q=urlencode($req->q);
 
         // cria URL
-        //$url = 'https://google.com/search?ie=UTF-8&q='.$q;
         $url = 'https://google.com/search?q='.$q;
 
         // recebe conteudo da página
@@ -31,13 +30,13 @@ class Search extends Controller
         preg_match_all('/<div class="egMi0 kCrYT"><a\s+href="\/url\?q=([^"]+)"/', $content, $links);
 
         // array para receber a relação de titulos e links
-        $tupla=[];
+        $tuple=[];
 
         // loop que povoa array tupla
         for($i=0; $i < sizeof($titles[1]); $i++){
-            $tupla[html_entity_decode($titles[1][$i])] = urldecode((explode("&", $links[1][$i]))[0]);
+            $tuple[html_entity_decode($titles[1][$i])] = urldecode((explode("&", $links[1][$i]))[0]);
         }
 
-        return json_encode($tupla, JSON_FORCE_OBJECT);
+        return json_encode($tuple, JSON_FORCE_OBJECT);
     }
 }
