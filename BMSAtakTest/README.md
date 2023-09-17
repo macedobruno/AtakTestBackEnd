@@ -2,6 +2,11 @@
 
 O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplicação, acesse o diretório do projeto, instale as bibliotecas necessarias e inicie o serviço da aplicação.
 
+## Requisitos
+
+ - PHP 8.2
+ - Composer
+
 ## Instruções
 
 ### Entre no diretorio do projeto

@@ -1,6 +1,11 @@
 # Atak Test - BackEnd
 
-O BackEnd do projeto foi construído em PHP 8.2 usando Laravel. Após clonar a aplicação, acesse o diretório do projeto, instale as bibliotecas necessarias e inicie o serviço da aplicação.
+O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplicação, acesse o diretório do projeto, instale as bibliotecas necessarias e inicie o serviço da aplicação.
+
+## Requisitos
+
+ - PHP 8.2
+ - Composer
 
 ## Instruções
 
@@ -9,7 +14,7 @@ O BackEnd do projeto foi construído em PHP 8.2 usando Laravel. Após clonar a a
 cd .\BMSAtakTest\
 ```
 
-### Instale as bibliotecas e dependências
+### Project setup
 ```
 composer install
 ```
