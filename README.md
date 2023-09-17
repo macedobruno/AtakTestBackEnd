@@ -14,7 +14,7 @@ O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplic
 cd .\BMSAtakTest\
 ```
 
-### Project setup
+### Instale as dependencias
 ```
 composer install
 ```
