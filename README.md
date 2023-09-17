@@ -1,6 +1,6 @@
 # Atak Test - BackEnd
 
-O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplicação, acesse o diretório do projeto, instale as bibliotecas necessarias e inicie o serviço da aplicação.
+O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplicação, acesse o diretório do projeto, instale as suas dependências e inicie o serviço da aplicação.
 
 ## Requisitos
 
@@ -9,7 +9,7 @@ O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplic
 
 ## Instruções
 
-### Entre no diretorio do projeto
+### Entre no diretório do projeto
 ```
 cd .\BMSAtakTest\
 ```
@@ -19,7 +19,7 @@ cd .\BMSAtakTest\
 composer install
 ```
 
-### Execute a aplicacao
+### Execute a aplicação
 ```
 php artisan serve
 ```
