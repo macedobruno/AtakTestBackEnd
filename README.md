@@ -9,7 +9,7 @@ O BackEnd do projeto foi construído em PHP 8.2 usando Laravel. Após clonar a a
 cd .\BMSAtakTest\
 ```
 
-### Project setup
+### Instale as bibliotecas e dependências
 ```
 composer install
 ```
