@@ -28,21 +28,14 @@ class Search extends Controller
         preg_match_all('/<div class="BNeawe vvjwJb AP7Wnd">([^<]*)<\/div>/s', $contentenc, $titles);
 
         // busca conteudo do link de cada resultado
-        preg_match_all('/<div class="egMi0 kCrYT"><a\s+href="\/url\?q=([^"]+)"/', $content, $linksbruto);
+        preg_match_all('/<div class="egMi0 kCrYT"><a\s+href="\/url\?q=([^"]+)"/', $content, $links);
 
-        //cria array para receber os links tratados
-        $links=[];
-
-        //explode cada item do array linksbruto para remover espaço e conteudo extra
-        foreach($linksbruto[1] as $mt){
-            array_push($links, urldecode((explode("&", $mt))[0]));
-        }
         // array para receber a relação de titulos e links
         $tupla=[];
 
         // loop que povoa array tupla
         for($i=0; $i < sizeof($titles[1]); $i++){
-            $tupla[html_entity_decode($titles[1][$i])] = $links[$i];
+            $tupla[html_entity_decode($titles[1][$i])] = urldecode((explode("&", $links[1][$i]))[0]);
         }
 
         return json_encode($tupla, JSON_FORCE_OBJECT);
