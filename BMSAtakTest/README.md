@@ -5,10 +5,13 @@ A API estará disponível pelo seguinte endereço:
 ```
 localhost:8000/api/search
 ```
+
 A requisição deve ser enviada via GET com a variavel 'q' contendo o que deverá ser pesquisado. Exemplo:
 ```
 localhost:8000/api/search?q=meme
 ```
+
+
 
 ## Entre no diretorio do projeto
 ```
