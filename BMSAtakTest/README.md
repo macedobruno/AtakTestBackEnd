@@ -11,7 +11,7 @@ cd BMSAtakTest
 composer install
 ```
 
-### Execute a aplicacao
+## Execute a aplicacao
 ```
 php artisan serve
 ```
