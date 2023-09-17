@@ -24,7 +24,7 @@ composer install
 php artisan serve
 ```
 
-
+## Utilização
 
 A API estará disponível pelo seguinte endereço:
 ```
