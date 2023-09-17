@@ -24,7 +24,8 @@ class Search extends Controller
             mb_detect_encoding($content, 'UTF-8, ISO-8859-1', true));
 
         // busca conteudo dentro da div com o título
-        preg_match_all('/<div class="BNeawe vvjwJb AP7Wnd">([^<]*)<\/div>/s', $contentenc, $titles);
+        //preg_match_all('/<div class="BNeawe vvjwJb AP7Wnd">([^<]*)<\/div>/s', $contentenc, $titles);
+        preg_match_all('/<h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">([^<]*)<\/div>/', $contentenc, $titles);
 
         // busca conteudo do link de cada resultado
         preg_match_all('/<div class="egMi0 kCrYT"><a\s+href="\/url\?q=([^"]+)"/', $content, $links);
@@ -33,7 +34,7 @@ class Search extends Controller
         $tuple=[];
 
         // loop que povoa array tupla
-        for($i=0; $i < sizeof($titles[1]); $i++){
+        for($i=0; $i < sizeof($links[1]); $i++){
             $tuple[html_entity_decode($titles[1][$i])] = urldecode((explode("&", $links[1][$i]))[0]);
         }
 
