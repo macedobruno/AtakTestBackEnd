@@ -1,6 +1,6 @@
 # Atak Test - BackEnd
 
-O BackEnd do projeto foi construído em PHP usando Laravel. Acesse o diretório da aplicação, instale as bibliotecas necessárias e inicie o serviço.
+O BackEnd do projeto foi construído em PHP usando Laravel. Acesse o diretório da aplicação, instale as dependências e inicie o serviço.
 
 ## Requisitos
 
