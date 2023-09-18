@@ -1,6 +1,6 @@
 # Atak Test - BackEnd
 
-O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplicação, acesse o diretório do projeto, instale as bibliotecas necessarias e inicie o serviço da aplicação.
+O BackEnd do projeto foi construído em PHP usando Laravel. Acesse o diretório da aplicação, instale as bibliotecas necessárias e inicie o serviço.
 
 ## Requisitos
 
@@ -9,7 +9,7 @@ O BackEnd do projeto foi construído em PHP usando Laravel. Após clonar a aplic
 
 ## Instruções
 
-### Entre no diretorio do projeto
+### Entre no diretório do projeto
 ```
 cd .\BMSAtakTest\
 ```
@@ -19,7 +19,7 @@ cd .\BMSAtakTest\
 composer install
 ```
 
-### Execute a aplicacao
+### Execute a aplicação
 ```
 php artisan serve
 ```
@@ -31,7 +31,7 @@ A API estará disponível pelo seguinte endereço:
 localhost:8000/api/search
 ```
 
-A requisição deve ser enviada via GET com a variavel 'q' contendo o que deverá ser pesquisado. Exemplo:
+A requisição deve ser enviada via GET com a variável 'q' contendo o que deverá ser pesquisado. Exemplo:
 ```
 localhost:8000/api/search?q=pipoca
 ```
